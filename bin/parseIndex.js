@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 const EPub = require('epub');
 const fs = require('fs');
 const sortBy = require('lodash.sortby');
