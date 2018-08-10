@@ -1,0 +1,5 @@
+.DS_Store
+*.epub
+index.json
+node_modules/*
+yarn-error.log
