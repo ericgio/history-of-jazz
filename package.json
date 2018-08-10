@@ -2,8 +2,7 @@
   "name": "history-of-jazz",
   "version": "1.0.0",
   "author": "ericgio",
-  "description": "",
-  "main": "index.js",
+  "description": "Data and visualizations based on Ted Gioia's \"The History of Jazz\"",
   "scripts": {
     "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
