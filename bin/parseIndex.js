@@ -164,7 +164,7 @@ function parseIndex(err, data) {
       });
     });
 
-    fs.writeFile('index.json', JSON.stringify(content, null, 2), (err) => {
+    fs.writeFile('./data/index.json', JSON.stringify(content, null, 2), (err) => {
       if (err) {
         return console.log(err);
       }

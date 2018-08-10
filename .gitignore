@@ -1,6 +1,5 @@
 .DS_Store
 *.epub
-index.json
-pageMap.json
+data/*
 node_modules/*
 yarn-error.log

@@ -26,7 +26,7 @@ function processPage(page) {
   // HACK. `getChapter` is async, so write the file when we reach the
   // last page
   if (+pageNumber === LAST_PAGE) {
-    fs.writeFile('pageMap.json', JSON.stringify(map, null, 2), (err) => {
+    fs.writeFile('./data/pageMap.json', JSON.stringify(map, null, 2), (err) => {
       console.log('Done.');
     });
   }

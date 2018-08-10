@@ -1,8 +1,8 @@
 const fs = require('fs');
 const sortBy = require('lodash.sortby');
 
-const index = require('../index');
-const pageMap = require('../pageMap');
+const index = require('../data/index');
+const pageMap = require('../data/pageMap');
 
 function getRefCount(str, match) {
   return (str.match(new RegExp(match, 'g')) || []).length;
@@ -48,14 +48,8 @@ function getReferences() {
     };
   });
 
-  // console.log(sortBy(index, a => a.references)
-  //   .reverse()
-  //   .slice(0, 100)
-  //   .map((a, idx) => `${idx + 1}) ${a.name.nickname ? a.name.nickname : a.name.first} ${a.name.last} - ${a.references} (${a.pages.length})`)
-  // );
-
   // Overwrite existing index.json file.
-  fs.writeFile('index.json', JSON.stringify(data, null, 2), (err) => {
+  fs.writeFile('./data/data.json', JSON.stringify(data, null, 2), (err) => {
     console.log('Done.');
   });
 }
